@@ -1,0 +1,166 @@
+userScema********************
+const mongoose = require("mongoose");
+
+const userSchema = new mongoose.Schema({
+  userName: { 
+    type: String, 
+    required: true, 
+    unique: true 
+  },
+    email: { 
+      type: String,
+     required: true,
+      unique: true 
+    },
+  password: { 
+    type: String,
+     required: true 
+    },
+  isDeleted: {
+     type: Boolean,
+     default: false 
+    },
+});
+
+module.exports = mongoose.model("User", userSchema);
+////////////////////////////////////////////////////////////
+***********************************************************
+user.js / route**********************
+const express = require("express");
+const {createUser,getAllUsers , gitUser , upUser , deleuser} = require("./../controller/users");
+
+const useRouter = express.Router();
+
+
+useRouter.post("/user" , createUser)
+useRouter.get("/allusers" , getAllUsers)
+useRouter.get('/user' , gitUser)
+useRouter.put("/upduser/:id" , upUser)
+useRouter.delete("/deluser" , deleuser)
+module.exports = useRouter;
+////////////////////////////////////////////////////////
+******************************************
+user.js /  controller********
+const userModel = require("./../../db/models/userSchema");
+
+//create users
+const createUser = (req, res) => {
+  const { userName, email, password, isDeleted} = req.body;
+  const newUser = new userModel({
+    userName,
+    email,
+    password,
+    isDeleted,
+  });
+  newUser
+    .save()
+    .then((result) => {
+      res.status(200).json(result);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
+};
+
+
+//git all users
+const getAllUsers = (req, res) => {
+    userModel
+      .find({})
+      .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+  };
+
+//git user by name
+const gitUser = (req,res) => {
+    const {id} = req.body;
+    userModel
+    .findOne({_id: id})
+    .then((result) => {
+        res.json(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+}
+
+
+//update user
+const upUser = (req, res) => {     
+    const { id } = req.params;  
+    const { userName} = req.body;   
+    userModel
+    .findByIdAndUpdate({_id: id},{userName: userName})
+    .then(() => {
+        res.json(`Your information has been updated`)
+    })
+    .catch((err) => {
+        res.send(err);
+    })
+}
+
+//delete user
+const deleuser = (req, res) => {
+    const { id } = req.params;
+    userModel
+    .remove({_id: id})
+    .then(() => {
+        res.json("Your information has been deleted")
+    })
+    .catch((err) => {
+        res.send(err);
+    })
+}
+
+
+
+module.exports = { createUser , getAllUsers , gitUser , upUser , deleuser};
+////////////////////////////////////////////////////////////////////////////////
+index.js
+const express = require("express");
+const cors = require("cors");
+const dotenv = require("dotenv");
+require("./db/db");
+const userRouter = require("./routers/route/users")
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+dotenv.config()
+
+app.use("/user" , userRouter)
+
+
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
+    console.log(`server is running on port ${PORT}`);
+  });
+//////////////////////////////////////////////////////////////
+*******************************************************
+db.js ****************************************
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+
+const options = {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  };
+
+dotenv.config();
+const DB_URL = process.env.DB_URL;
+
+mongoose.connect(DB_URL, options).then(
+  () => {
+    console.log("DB Ready To Use");
+  },
+  (err) => {
+    console.log(err);
+  }
+);
