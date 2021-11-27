@@ -1,0 +1,282 @@
+[
+    {
+        "answers": [],
+        "_id": "619e6286c1643f6fc6eaabef",
+        "description": "Q1: How many planets are there in the Solar System?",
+        "alternative": [
+            {
+                "text": "7",
+                "isCorrect": false,
+                "_id": "619e6286c1643f6fc6eaabf0"
+            },
+            {
+                "text": "8",
+                "isCorrect": true,
+                "_id": "619e6286c1643f6fc6eaabf1"
+            },
+            {
+                "text": "9",
+                "isCorrect": false,
+                "_id": "619e6286c1643f6fc6eaabf2"
+            },
+            {
+                "text": "10",
+                "isCorrect": false,
+                "_id": "619e6286c1643f6fc6eaabf3"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e686fc1643f6fc6eaabf5",
+        "description": "Q2: What planet is closest to the sun?",
+        "alternative": [
+            {
+                "text": "Mercury",
+                "isCorrect": true,
+                "_id": "619e686fc1643f6fc6eaabf6"
+            },
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e686fc1643f6fc6eaabf7"
+            },
+            {
+                "text": "Earth",
+                "isCorrect": false,
+                "_id": "619e686fc1643f6fc6eaabf8"
+            },
+            {
+                "text": "Venus",
+                "isCorrect": false,
+                "_id": "619e686fc1643f6fc6eaabf9"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e69c1c1643f6fc6eaabfb",
+        "description": "Q3: What is the farthest planet from the sun?",
+        "alternative": [
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e69c1c1643f6fc6eaabfc"
+            },
+            {
+                "text": "Venus",
+                "isCorrect": false,
+                "_id": "619e69c1c1643f6fc6eaabfd"
+            },
+            {
+                "text": "Jupiter",
+                "isCorrect": false,
+                "_id": "619e69c1c1643f6fc6eaabfe"
+            },
+            {
+                "text": "Pluto",
+                "isCorrect": true,
+                "_id": "619e69c1c1643f6fc6eaabff"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6a4bc1643f6fc6eaac01",
+        "description": "Q4: Which planet is not a gas giant?",
+        "alternative": [
+            {
+                "text": "Neptune",
+                "isCorrect": true,
+                "_id": "619e6a4bc1643f6fc6eaac02"
+            },
+            {
+                "text": "Saturn",
+                "isCorrect": false,
+                "_id": "619e6a4bc1643f6fc6eaac03"
+            },
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e6a4bc1643f6fc6eaac04"
+            },
+            {
+                "text": "Jupiter",
+                "isCorrect": false,
+                "_id": "619e6a4bc1643f6fc6eaac05"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6b25c1643f6fc6eaac07",
+        "description": "Q5: Which planet is not a terrestrial planet?",
+        "alternative": [
+            {
+                "text": "Saturn",
+                "isCorrect": true,
+                "_id": "619e6b25c1643f6fc6eaac08"
+            },
+            {
+                "text": "Earth",
+                "isCorrect": false,
+                "_id": "619e6b25c1643f6fc6eaac09"
+            },
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e6b25c1643f6fc6eaac0a"
+            },
+            {
+                "text": "Venus",
+                "isCorrect": false,
+                "_id": "619e6b25c1643f6fc6eaac0b"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6bc7c1643f6fc6eaac0d",
+        "description": "Q6: What is the most volcanically active body in the solar system?",
+        "alternative": [
+            {
+                "text": "Ganymede",
+                "isCorrect": false,
+                "_id": "619e6bc7c1643f6fc6eaac0e"
+            },
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e6bc7c1643f6fc6eaac0f"
+            },
+            {
+                "text": "Io",
+                "isCorrect": true,
+                "_id": "619e6bc7c1643f6fc6eaac10"
+            },
+            {
+                "text": "Pluto",
+                "isCorrect": false,
+                "_id": "619e6bc7c1643f6fc6eaac11"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6c1ec1643f6fc6eaac13",
+        "description": "Q7: Which planet has the largest ring system?",
+        "alternative": [
+            {
+                "text": "Jupiter",
+                "isCorrect": false,
+                "_id": "619e6c1ec1643f6fc6eaac14"
+            },
+            {
+                "text": "Pluto",
+                "isCorrect": false,
+                "_id": "619e6c1ec1643f6fc6eaac15"
+            },
+            {
+                "text": "Saturn",
+                "isCorrect": true,
+                "_id": "619e6c1ec1643f6fc6eaac16"
+            },
+            {
+                "text": "Mercury",
+                "isCorrect": false,
+                "_id": "619e6c1ec1643f6fc6eaac17"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6d1ac1643f6fc6eaac19",
+        "description": "Q8: What is the only known moon of Pluto?",
+        "alternative": [
+            {
+                "text": "Ganymede",
+                "isCorrect": false,
+                "_id": "619e6d1ac1643f6fc6eaac1a"
+            },
+            {
+                "text": "Plutonia",
+                "isCorrect": false,
+                "_id": "619e6d1ac1643f6fc6eaac1b"
+            },
+            {
+                "text": "Io",
+                "isCorrect": false,
+                "_id": "619e6d1ac1643f6fc6eaac1c"
+            },
+            {
+                "text": "Charon",
+                "isCorrect": true,
+                "_id": "619e6d1ac1643f6fc6eaac1d"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6db7c1643f6fc6eaac1f",
+        "description": "Q9: What is the rotational period of Earth?",
+        "alternative": [
+            {
+                "text": "1 year",
+                "isCorrect": false,
+                "_id": "619e6db7c1643f6fc6eaac20"
+            },
+            {
+                "text": "24 hours",
+                "isCorrect": true,
+                "_id": "619e6db7c1643f6fc6eaac21"
+            },
+            {
+                "text": "48 hours",
+                "isCorrect": false,
+                "_id": "619e6db7c1643f6fc6eaac22"
+            },
+            {
+                "text": "12 hours ",
+                "isCorrect": false,
+                "_id": "619e6db7c1643f6fc6eaac23"
+            }
+        ],
+        "__v": 0
+    },
+    {
+        "answers": [],
+        "_id": "619e6e7ec1643f6fc6eaac25",
+        "description": "Q10:Which planet has the hottest temperatures?",
+        "alternative": [
+            {
+                "text": "Mercury",
+                "isCorrect": false,
+                "_id": "619e6e7ec1643f6fc6eaac26"
+            },
+            {
+                "text": "Mars",
+                "isCorrect": false,
+                "_id": "619e6e7ec1643f6fc6eaac27"
+            },
+            {
+                "text": "Pluto",
+                "isCorrect": false,
+                "_id": "619e6e7ec1643f6fc6eaac28"
+            },
+            {
+                "text": "Venus",
+                "isCorrect": true,
+                "_id": "619e6e7ec1643f6fc6eaac29"
+            }
+        ],
+        "__v": 0
+    }
+]
